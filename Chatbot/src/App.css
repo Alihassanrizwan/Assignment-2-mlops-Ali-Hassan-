@@ -1,0 +1,109 @@
+/* Main Application Style */
+.App {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background-color: rgb(240, 245, 245); /* Soft background color */
+  flex-direction: column; /* Stack children vertically */
+  padding: 20px; /* Add padding around the edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Title Container */
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px; /* Space below the title */
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  align-items: center; /* Center input and button vertically */
+  justify-content: center; /* Center input and button horizontally */
+  flex-direction: row; /* Align items horizontally */
+  margin: 10px; 
+}
+
+/* Input Box */
+.input-box {
+  border: 1px solid black; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  width: 350px; /* Width of the input */
+  padding: 10px; /* Padding inside the input */
+  font-size: 16px; /* Font size for better readability */
+  transition: border-color 0.3s; /* Smooth border transition */
+  flex-grow: 1; /* Allow input to grow */
+  min-height: 40px; /* Minimum height for the input */
+  max-height: 150px; /* Maximum height to prevent overflow */
+  resize: vertical; /* Allow vertical resizing */
+  overflow: auto; /* Allow scrolling for overflow content */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+
+/* Button Box */
+.button-box {
+  padding: 10px 15px; /* Padding for button */
+  border-radius: 10px; /* Rounded corners */
+  background-color: rgb(173, 213, 114); /* Button background */
+  margin-left: 10px; /* Space between input and button */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button */
+  
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Button Hover and Focus Effects */
+.button-box:hover {
+  background-color: aliceblue; /* Lighter color on hover */
+}
+
+.button-box:focus {
+  outline: none; /* Remove outline */
+  background-color: rgb(21, 88, 146); /* Change color on focus */
+}
+
+/* Chat Container */
+.chatContainer {
+  display: flex; /* Use flexbox for layout */
+  align-items: flex-start; /* Align items to the start */
+  justify-content: center; /* Center content */
+  flex-direction: column; /* Stack messages vertically */
+  width: 500px; /* Fixed width for chat area */
+  max-height: 400px; /* Set max height for scrolling */
+  background-color: antiquewhite; /* Background color */
+  border: 7px solid black; /* Border color */
+  position: relative; /* Position for overflow */
+  margin: auto; /* Center in parent */
+  margin-top: 10px; /* Space above chat container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px; /* Padding inside chat container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Text Box Style */
+.text-box {
+  display: flex; /* Use flexbox for layout */
+  align-items: flex-start; /* Align items at the start vertically */
+  justify-content: flex-start; /* Align text to the left */
+  flex-direction: column; /* Stack text vertically */
+  width: 100%; /* Full width */
+  max-width: 90%; /* Prevent boxes from being too wide */
+  background-color: rgb(255, 252, 252); /* Background color for messages */
+  padding: 10px; /* Padding inside message box */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between messages */
+  word-wrap: break-word; /* Prevent overflow */
+  color: rgb(0, 0, 0); /* Text color */
+  min-height: 40px; /* Minimum height for the text box */
+  max-height: 200px; /* Optional: Set a max height for long messages */
+  overflow-y: auto; /* Allow scrolling if content exceeds max height */
+}
+
